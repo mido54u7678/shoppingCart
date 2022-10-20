@@ -1,0 +1,13 @@
+<div class='center'>
+  <h3> login </h3>
+  <form action="" [formGroup]="form">
+    <label for=""> phone-number </label>
+    <input formControlName="name" type="text">
+    <ng-container *ngIf="name.errors?.['checkExist']">
+      this phoneNumber exist
+    </ng-container>
+    <label for="">password</label>
+    <input formControlName="password" type="password">
+    <button> submit </button>
+  </form>
+</div>

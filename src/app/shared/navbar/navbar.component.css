@@ -1,0 +1,12 @@
+ a{
+  cursor: pointer;
+  display: block;
+}
+
+small{
+margin-left: 3px;
+font-size: 10px;
+position: absolute;
+color: orange;
+font-weight: bold;
+}

@@ -1,0 +1,9 @@
+<section class="flex-box" *ngIf="show">
+  <div *ngFor="let item of items" class="container">
+    <img [src]="item.image" alt="">
+    <div class="title"> {{item.title}} </div>
+    <div class="price">{{item.price | currency}}</div>
+  </div>
+
+</section>
+<loading *ngIf="!show"> </loading>

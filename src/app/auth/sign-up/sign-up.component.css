@@ -1,0 +1,46 @@
+.form-control > div{
+  width: 14%;
+margin: 10px auto;
+color: black;
+}
+
+
+form{
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+margin: 10px auto;
+align-items: center;
+background-color:RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+}
+label{
+  margin: 10px;
+  font-size: 15px;
+  color: white;
+  float: left;
+}
+
+button{
+border: none;
+padding: 10px 20px;
+background-color: darkgray;
+border-radius: 5px;
+margin: 10px;
+color: black;
+font-weight: bolder ;
+}
+input{
+border: 1px solid gray;
+border-radius: 4px;
+padding: 5px 20px;
+}
+
+small{
+  display: block;
+}
+
+.ng-invalid{
+  border: 1px solid red;
+}

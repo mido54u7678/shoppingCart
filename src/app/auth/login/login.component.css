@@ -1,0 +1,36 @@
+.center{
+  margin: 10px auto ;
+  width: 400px;
+  height: 45vh;
+border: 3px solid gray;
+border-radius: 8px ;
+text-align: center;
+background-color:RGBA(33,37,41,var(--bs-bg-opacity,1))!important;
+color: white;
+}
+form{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+input{
+  margin: 5px;
+border-radius: 5px;
+border: 1px solid black;
+padding: 10px 20px;
+}
+
+label{
+  font-size: 18px;
+}
+
+h3{
+margin-bottom:30px ;
+
+}
+
+button{
+padding: 5px 20px;
+border-radius: 5px;
+margin-top:10px  ;
+}

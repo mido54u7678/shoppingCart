@@ -1,0 +1,18 @@
+<section class="flex-box">
+  <img [src]="items.image" alt="">
+  <div class="container">
+
+
+    <div class="category">{{items.category}}</div>
+    <div class="title"> {{items.title}} </div>
+    <div class="des">{{items.desciption}}</div>
+    <div class="rating">rate : {{items.rating.rate }}</div>
+    <div class="rating">count : {{items.rating.count }}</div>
+
+    <div class="price"> price : {{items.price | currency }}</div>
+
+    <button (click)="saveToLocalStorage(items.id)" style="margin-top:10px" class="btn btn-primary">add to cart
+    </button>
+  </div>
+
+</section>

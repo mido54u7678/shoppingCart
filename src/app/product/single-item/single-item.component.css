@@ -1,0 +1,22 @@
+.flex-box{
+  width: 80%;
+}
+
+.container{
+  height: 70vh;
+margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 40%;
+text-align: center;
+}
+img{
+  display: block;
+  height:30%;
+  width: 30%;
+float: right;
+}
+.container > div{
+  margin-top: 20px;
+}

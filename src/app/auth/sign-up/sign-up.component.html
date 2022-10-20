@@ -1,0 +1,33 @@
+<div class="form-control">
+  <div> create your account </div>
+  <form action="" [formGroup]="formgroup" (ngSubmit)="onSubmit()">
+
+    <label for=""> first-name <input class="d-block" formControlName="firstName" type="text">
+      <small *ngIf="firstName.dirty&&firstName.invalid && firstName.touched "> plase enter your name </small>
+    </label>
+
+    <label for=""> phone-number <input class=" d-block" formControlName="phoneNumber" type="text">
+
+      <small *ngIf="phoneNumber.dirty&&phoneNumber.invalid && phoneNumber.touched"> plase enter your phone-number
+      </small>
+      <small *ngIf="phoneNumber.errors?.['onlyEgyNum']"> you have to write egy number </small>
+    </label>
+
+    <label for=""> password <input class="d-block" formControlName="password" type="password">
+
+      <ng-container *ngIf="password.touched">
+        <small class="d-block"> plase enter your password </small>
+      </ng-container>
+
+      <ng-container *ngIf="password.invalid">
+        <small> please put more than 6 letters</small>
+      </ng-container>
+    </label>
+
+    <label for="">re-password <input class="d-block" formControlName="rePassword" type="password">
+      <small *ngIf="rePassword.invalid && rePassword.touched"> plase enter your re-password </small>
+    </label>
+
+    <button> {{formgroup.invalid}} submitt</button>
+  </form>
+</div>
